@@ -8,7 +8,8 @@ git_init()
 
 git_branch()
 {
-	git checkout -b develop origin/develop
+	git checkout -b develop 
+	git push -u origin develop
 }
 
 git_push()
