@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /R1/zhangtao/soft/bin/hostlist | xargs -i remoterun {} $*

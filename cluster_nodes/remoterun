@@ -1,0 +1,6 @@
+#!/bin/bash
+echo ===--- $1 ---===
+HOST=$1
+shift
+ssh $HOST $*
+echo
