@@ -1,0 +1,5 @@
+mysql uq_e3sm  -u  uq_e3sm_admin -h nerscdb04.nersc.gov -p3Ii3i3i2fdd_2s25j333jjdd
+_admin 3Ii3i3i2fdd_2s25j333jjdd
+_user 232Sssftt44_2kkkkk3322
+select id,c0_ocn,c0_lnd,ai,c1,c14,PRECT,Q850,LWCF,SWCF,PR_PDF,MCPI,NOTE  from e3sm_tune where id > 54;
+select id,dmpdz,c0_ocn,c0_lnd,dp1,c1,c8,c14,ai,PRECT,CLDHGH,CLDLOW,CLDMED,LWCF,SWCF,PDF_1,PDF_2,PDF_3,Q850,MCPI,NOTE from e3sm_tune_MOO

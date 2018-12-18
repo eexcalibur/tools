@@ -1,0 +1,10 @@
+I'm writing to you because you've submitted an interactive job to the debug queue on Cori since mid September of this year. I wanted to let you know that there's a faster and better way to get interactive access to a node by using the interactive queue that we've deployed at NERSC. This queue is designed to give immediate interactive access to nodes with minimal wait times. You can submit interactive jobs to this queue using as many as 64 nodes for up to 4 hours and get access to them within six minutes. We hope that this queue will be useful for doing iterative debugging of code and scripts and for testing at small scale. 
+
+To run an interactive job on Cori, use "salloc" as normal, with the addition of "--qos=interactive" to indicate the interactive partition. You can use the usual "-C haswell" or "-C KNL" flags to select node type, as well as all other regular salloc flags ("-t", etc.). Currently only quad cache mode is available as the KNL node type. To ensure this queue is available to anyone who wants to use it, a user is limited to only one job at a time, and a repo is limited to a total of 64 nodes of any type (Haswell AND KNL). 
+
+For more information, please see https://www.nersc.gov/users/computational-systems/cori/running-jobs/interactive-jobs/#toc-anchor-2. Please submit a ticket to the consultants, via help.nersc.gov, my.nersc.gov, or consult@nersc.gov, with any feedback or questions.
+
+
+ salloc -N 2 -n 8 -C haswell -q debug -t 00:30:00 -L SCRATCH
+
+salloc -N 2 -n 8  --qos=interactive -C knl -t 00:30:00
